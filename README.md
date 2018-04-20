@@ -1,6 +1,6 @@
-# Multitenancy Django Example
+# Multi-tenancy Django Example
 
-Example of multitenancy using Django 1.11 and MySql.
+Example of multi-tenancy using Django 1.11 and MySql.
 
 ## Step by Step to Install:
 
@@ -20,7 +20,7 @@ First of all, have pip and virtualenv installed.
 ```pip install -r requirements.txt```<br>
 (NOTE) some bugs were found in the ```django-db-multitenant==0.3.2``` library. So a fork was created with the problem already fixed (https://github.com/diegofsousa/django-db-multitenant). The above command already installs the version with bugs fixed.
 
-5. Create the databases in <i>mysql command line</i>. In the following example we will use two tenants (```tenant1``` and ```tenant2```), however you can change it with whatever you want. NOTE: Each database will be a tenant. Here is an example of how it should be created:
+5. Create the databases in <i>mysql command line</i>. In the following example we will use two tenants (```tenant1``` and ```tenant2```), however you can change it with whatever you want. NOTE: Each database will be a tenant. Here is an example of how it should be created: <br>
 ```CREATE DATABASE tenant1 CHARACTER SET utf8;``` <br>
 ```CREATE DATABASE tenant2 CHARACTER SET utf8;``` 
 
@@ -40,9 +40,10 @@ DATABASES = {
 
 One of the tenants will be used in this configuation only for Django not to complain about syntax error.
 
-7. Add the hosts file (in Linux OS: ```/etc/hosts```) for your computer, pointing to ```127.0.0.1``` as the tenants were created:<br>
-``` 127.0.0.1       tenant1.example
-    127.0.0.1       tenant2.example
+7. Add the hosts file (in Linux OS: ```/etc/hosts/```) for your computer, pointing to ```127.0.0.1``` as the tenants were created:<br>
+``` 
+127.0.0.1       tenant1.example
+127.0.0.1       tenant2.example
 ```
 
 6. Migrate the databases:<br>
