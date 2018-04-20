@@ -12,11 +12,11 @@ First of all, have pip and virtualenv installed.
 2. Enter the virtualenv folder and activate it:<br>
 ```source bin/activate```
 
-3. To install the ```mysqlclient``` driver make sure you have installed the dependencies below:
+3. To install the ```mysqlclient``` driver make sure you have installed the dependencies below: <br>
 ```sudo apt-get install python-dev python3-dev``` <br>
 ```sudo apt-get install libmysqlclient-dev```
 
-4. Install the required packages:
+4. Install the required packages: <br>
 ```pip install -r requirements.txt```<br>
 (NOTE) some bugs were found in the ```django-db-multitenant==0.3.2``` library. So a fork was created with the problem already fixed (https://github.com/diegofsousa/django-db-multitenant). The above command already installs the version with bugs fixed.
 
@@ -53,7 +53,7 @@ One of the tenants will be used in this configuation only for Django not to comp
 7. Enter the "app" folder and install pip dependencies:<br>
 ```pip install -r requirements.txt```
 
-8. Run your application with ```./manage.py runserver``` and access your tenants with:
+8. Run your application with ```./manage.py runserver``` and access your tenants with: <br>
 ```http://tenant1.example:8000``` for <b>tenant1</b> and ```http://tenant2.example:8000``` for <b>tenant2</b>.
 
 ## Credits
