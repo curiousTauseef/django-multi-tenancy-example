@@ -50,10 +50,7 @@ One of the tenants will be used in this configuation only for Django not to comp
 ```TENANT_DATABASE_NAME=tenant1 ./manage.py migrate``` <br>
 ```TENANT_DATABASE_NAME=tenant2 ./manage.py migrate```
 
-7. Enter the "app" folder and install pip dependencies:<br>
-```pip install -r requirements.txt```
-
-8. Run your application with ```./manage.py runserver``` and access your tenants with: <br>
+7. Run your application with ```./manage.py runserver``` and access your tenants with: <br>
 ```http://tenant1.example:8000``` for <b>tenant1</b> and ```http://tenant2.example:8000``` for <b>tenant2</b>.
 
 ## Credits
